@@ -1,0 +1,17 @@
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  h4
+  {
+    color: darkblue;
+  }
+
+  a
+  {
+    color: darkblue;
+  }

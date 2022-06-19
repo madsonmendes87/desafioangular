@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Favorito</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <a  href="http://localhost:4200/favorito"><mat-icon>favorite</mat-icon></a>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <a href="http://localhost:4200/compartilhar"><mat-icon>share</mat-icon></a>
+    </button>
+  </mat-toolbar>
+<div class="example-button-container">
+    <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+        <a href="http://localhost:4200/"><mat-icon>home</mat-icon></a>
+        <h4>home</h4>
+    </button>
+</div><br>
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Inclua seus favoritos</mat-label>
+    <input matInput #message maxlength="256" placeholder="Ex. Eu gosto de...">
+    <mat-hint align="start"><strong>Não divulgue informações pessoais</strong> </mat-hint>
+    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+  </mat-form-field>
+</form>
